@@ -10,6 +10,7 @@ import io.vertx.ext.web.RoutingContext;
 import io.vertx.ext.web.handler.BodyHandler;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -26,7 +27,8 @@ public class SimpleREST extends AbstractVerticle {
 
   @Override
   public void start() {
-
+	  
+	  
     setUpInitialData();
 
     Router router = Router.router(vertx);

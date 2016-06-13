@@ -1,4 +1,4 @@
-package br.com.bb;
+package br.com.bb.rest;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,8 +23,10 @@ public class RestResource {
 
 		Map<String, String> json = new HashMap<>();
 		json.put("framework", "KumuluzEE");
+		json.put("em", em.toString());
 
 		System.out.println(em);
+		
 		return Response.ok(json).build();
 	}
 }
